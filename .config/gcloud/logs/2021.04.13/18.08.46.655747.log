@@ -1,0 +1,131 @@
+2021-04-13 18:08:46,656 DEBUG    root            Loaded Command Group: ['gcloud', 'beta', 'run']
+2021-04-13 18:08:46,675 DEBUG    root            Loaded Command Group: ['gcloud', 'beta', 'run', 'services']
+2021-04-13 18:08:46,708 DEBUG    root            Loaded Command Group: ['gcloud', 'beta', 'run', 'services', 'describe']
+2021-04-13 18:08:46,714 DEBUG    root            Running [gcloud.beta.run.services.describe] with arguments: [--format: "json", --platform: "managed", --project: "refined-grammar-310502", --quiet: "True", --region: "us-central1", SERVICE: "hello-world-1"]
+2021-04-13 18:08:46,733 DEBUG    google.auth.transport.requests Making request: GET http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/jasonbitheads@gmail.com/?recursive=true
+2021-04-13 18:08:46,736 DEBUG    urllib3.connectionpool Starting new HTTP connection (1): metadata.google.internal:80
+2021-04-13 18:08:46,739 DEBUG    urllib3.connectionpool http://metadata.google.internal:80 "GET /computeMetadata/v1/instance/service-accounts/jasonbitheads@gmail.com/?recursive=true HTTP/1.1" 200 None
+2021-04-13 18:08:46,740 DEBUG    google.auth.transport.requests Making request: GET http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/jasonbitheads@gmail.com/token
+2021-04-13 18:08:46,742 DEBUG    urllib3.connectionpool Resetting dropped connection: metadata.google.internal
+2021-04-13 18:08:46,744 DEBUG    urllib3.connectionpool http://metadata.google.internal:80 "GET /computeMetadata/v1/instance/service-accounts/jasonbitheads@gmail.com/token HTTP/1.1" 200 None
+2021-04-13 18:08:46,753 DEBUG    google.auth.transport.requests Making request: GET http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/jasonbitheads@gmail.com/?recursive=true
+2021-04-13 18:08:46,755 DEBUG    urllib3.connectionpool Starting new HTTP connection (1): metadata.google.internal:80
+2021-04-13 18:08:46,757 DEBUG    urllib3.connectionpool http://metadata.google.internal:80 "GET /computeMetadata/v1/instance/service-accounts/jasonbitheads@gmail.com/?recursive=true HTTP/1.1" 200 None
+2021-04-13 18:08:46,758 DEBUG    google.auth.transport.requests Making request: GET http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/jasonbitheads@gmail.com/token
+2021-04-13 18:08:46,760 DEBUG    urllib3.connectionpool Resetting dropped connection: metadata.google.internal
+2021-04-13 18:08:46,762 DEBUG    urllib3.connectionpool http://metadata.google.internal:80 "GET /computeMetadata/v1/instance/service-accounts/jasonbitheads@gmail.com/token HTTP/1.1" 200 None
+2021-04-13 18:08:46,784 DEBUG    google.auth.transport.requests Making request: GET http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/jasonbitheads@gmail.com/?recursive=true
+2021-04-13 18:08:46,787 DEBUG    urllib3.connectionpool Starting new HTTP connection (1): metadata.google.internal:80
+2021-04-13 18:08:46,789 DEBUG    urllib3.connectionpool http://metadata.google.internal:80 "GET /computeMetadata/v1/instance/service-accounts/jasonbitheads@gmail.com/?recursive=true HTTP/1.1" 200 None
+2021-04-13 18:08:46,790 DEBUG    google.auth.transport.requests Making request: GET http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/jasonbitheads@gmail.com/token
+2021-04-13 18:08:46,792 DEBUG    urllib3.connectionpool Resetting dropped connection: metadata.google.internal
+2021-04-13 18:08:46,794 DEBUG    urllib3.connectionpool http://metadata.google.internal:80 "GET /computeMetadata/v1/instance/service-accounts/jasonbitheads@gmail.com/token HTTP/1.1" 200 None
+2021-04-13 18:08:46,803 DEBUG    google.auth.transport.requests Making request: GET http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/jasonbitheads@gmail.com/?recursive=true
+2021-04-13 18:08:46,805 DEBUG    urllib3.connectionpool Starting new HTTP connection (1): metadata.google.internal:80
+2021-04-13 18:08:46,807 DEBUG    urllib3.connectionpool http://metadata.google.internal:80 "GET /computeMetadata/v1/instance/service-accounts/jasonbitheads@gmail.com/?recursive=true HTTP/1.1" 200 None
+2021-04-13 18:08:46,808 DEBUG    google.auth.transport.requests Making request: GET http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/jasonbitheads@gmail.com/token
+2021-04-13 18:08:46,810 DEBUG    urllib3.connectionpool Resetting dropped connection: metadata.google.internal
+2021-04-13 18:08:46,812 DEBUG    urllib3.connectionpool http://metadata.google.internal:80 "GET /computeMetadata/v1/instance/service-accounts/jasonbitheads@gmail.com/token HTTP/1.1" 200 None
+2021-04-13 18:08:47,076 INFO     root            Display format: "service json"
+2021-04-13 18:08:47,143 INFO     ___FILE_ONLY___ {
+  "apiVersion": "serving.knative.dev/v1",
+  "kind": "Service",
+  "metadata": {
+    "annotations": {
+      "client.knative.dev/user-image": "gcr.io/refined-grammar-310502/hello-world-1",
+      "run.googleapis.com/client-name": "Cloud Code for VS Code",
+      "run.googleapis.com/client-version": "1.10.0",
+      "run.googleapis.com/ingress": "all",
+      "run.googleapis.com/ingress-status": "all",
+      "run.googleapis.com/launch-stage": "BETA",
+      "serving.knative.dev/creator": "jasonbitheads@gmail.com",
+      "serving.knative.dev/lastModifier": "jasonbitheads@gmail.com"
+    },
+    "creationTimestamp": "2021-04-13T16:53:37.674637Z",
+    "generation": 3,
+    "labels": {
+      "cloud.googleapis.com/location": "us-central1"
+    },
+    "name": "hello-world-1",
+    "namespace": "577823594134",
+    "resourceVersion": "AAW/3oVbC68",
+    "selfLink": "/apis/serving.knative.dev/v1/namespaces/577823594134/services/hello-world-1",
+    "uid": "76e93d10-e53b-4035-8a47-5a1c244d1892"
+  },
+  "spec": {
+    "template": {
+      "metadata": {
+        "annotations": {
+          "autoscaling.knative.dev/maxScale": "100",
+          "client.knative.dev/user-image": "gcr.io/refined-grammar-310502/hello-world-1",
+          "run.googleapis.com/client-name": "Cloud Code for VS Code",
+          "run.googleapis.com/client-version": "1.10.0",
+          "run.googleapis.com/sandbox": "gvisor"
+        },
+        "name": "hello-world-1-00003-jev"
+      },
+      "spec": {
+        "containerConcurrency": 80,
+        "containers": [
+          {
+            "image": "gcr.io/refined-grammar-310502/hello-world-1",
+            "ports": [
+              {
+                "containerPort": 8080
+              }
+            ],
+            "resources": {
+              "limits": {
+                "cpu": "1",
+                "memory": "256Mi"
+              }
+            }
+          }
+        ],
+        "timeoutSeconds": 300
+      }
+    },
+    "traffic": [
+      {
+        "latestRevision": true,
+        "percent": 100
+      }
+    ]
+  },
+  "status": {
+    "address": {
+      "url": "https://hello-world-1-ymf7xcfhmq-uc.a.run.app"
+    },
+    "conditions": [
+      {
+        "lastTransitionTime": "2021-04-13T18:08:44.362280Z",
+        "status": "True",
+        "type": "Ready"
+      },
+      {
+        "lastTransitionTime": "2021-04-13T18:08:37.159445Z",
+        "status": "True",
+        "type": "ConfigurationsReady"
+      },
+      {
+        "lastTransitionTime": "2021-04-13T18:08:44.534703Z",
+        "status": "True",
+        "type": "RoutesReady"
+      }
+    ],
+    "latestCreatedRevisionName": "hello-world-1-00003-jev",
+    "latestReadyRevisionName": "hello-world-1-00003-jev",
+    "observedGeneration": 3,
+    "traffic": [
+      {
+        "latestRevision": true,
+        "percent": 100,
+        "revisionName": "hello-world-1-00003-jev"
+      }
+    ],
+    "url": "https://hello-world-1-ymf7xcfhmq-uc.a.run.app"
+  }
+}
+2021-04-13 18:08:47,144 INFO     ___FILE_ONLY___ 
+
+2021-04-13 18:08:47,145 DEBUG    root            SDK update checks are disabled.

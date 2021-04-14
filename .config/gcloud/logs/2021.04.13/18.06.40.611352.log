@@ -1,0 +1,44 @@
+2021-04-13 18:06:40,612 DEBUG    root            Loaded Command Group: ['gcloud', 'config']
+2021-04-13 18:06:40,614 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'config_helper']
+2021-04-13 18:06:40,616 DEBUG    root            Running [gcloud.config.config-helper] with arguments: [--format: "json", --quiet: "True"]
+2021-04-13 18:06:40,635 DEBUG    google.auth.transport.requests Making request: GET http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/jasonbitheads@gmail.com/?recursive=true
+2021-04-13 18:06:40,638 DEBUG    urllib3.connectionpool Starting new HTTP connection (1): metadata.google.internal:80
+2021-04-13 18:06:40,641 DEBUG    urllib3.connectionpool http://metadata.google.internal:80 "GET /computeMetadata/v1/instance/service-accounts/jasonbitheads@gmail.com/?recursive=true HTTP/1.1" 200 None
+2021-04-13 18:06:40,642 DEBUG    google.auth.transport.requests Making request: GET http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/jasonbitheads@gmail.com/token
+2021-04-13 18:06:40,645 DEBUG    urllib3.connectionpool Resetting dropped connection: metadata.google.internal
+2021-04-13 18:06:40,648 DEBUG    urllib3.connectionpool http://metadata.google.internal:80 "GET /computeMetadata/v1/instance/service-accounts/jasonbitheads@gmail.com/token HTTP/1.1" 200 None
+2021-04-13 18:06:40,661 INFO     root            Display format: "default json"
+2021-04-13 18:06:40,732 INFO     ___FILE_ONLY___ {
+  "configuration": {
+    "active_configuration": "default",
+    "properties": {
+      "component_manager": {
+        "disable_update_check": "True"
+      },
+      "compute": {
+        "gce_metadata_read_timeout_sec": "30"
+      },
+      "core": {
+        "account": "jasonbitheads@gmail.com",
+        "disable_prompts": "True",
+        "disable_usage_reporting": "True",
+        "print_unhandled_tracebacks": "true"
+      },
+      "metrics": {
+        "environment": "cloudcode.vscode",
+        "environment_version": "1.10.0"
+      }
+    }
+  },
+  "credential": {
+    "access_token": "ya29.a0AfH6SMD2Z0ns2wWJ0chijoMmJ9e_ng2QIGBAJqLpMpmmn63ljPSlagXrKk09TdGy6TWKUOKCoc3VXMZKie7GYrlqcAVF2cDSjWTxdKKkFfhBcA-zCHQhtx1tKmoHRPL1a824EObc2JQ20d5dLR_XkHaOgAAoDnEeZegy7UDTChaomWbfY25RRGomV8O7yamZ-2SDMoKard7wr33v4Kx34yiUww3_D60DkoKXNDC9TfgSo9IqOK8C8qh-ngkS-PWALPqm4TE",
+    "id_token": "eyJhbGciOiJSUzI1NiIsImtpZCI6Ijc3NDU3MzIxOGM2ZjZhMmZlNTBlMjlhY2JjNjg2NDMyODYzZmM5YzMiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJhY2NvdW50cy5nb29nbGUuY29tIiwiYXpwIjoiNjE4MTA0NzA4MDU0LTlyOXMxYzRhbGczNmVybGl1Y2hvOXQ1Mm4zMm42ZGdxLmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwiYXVkIjoiNjE4MTA0NzA4MDU0LTlyOXMxYzRhbGczNmVybGl1Y2hvOXQ1Mm4zMm42ZGdxLmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwic3ViIjoiMTAzNjMyMDAwODUwNDI2MzE4OTk2IiwiZW1haWwiOiJqYXNvbmJpdGhlYWRzQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJhdF9oYXNoIjoiSzZucDNBTWdFaU5KeE0ySXEtVFNWZyIsImlhdCI6MTYxODMzNzE5NSwiZXhwIjoxNjE4MzQwNzk1LCJqdGkiOiI5OTg2ODBlOGIzYTM0MWIyYjBmOWUzYmQwYjZhNDlmZDFhYTk1NGNhIn0.pJzXo4GaZeXS7avSNJRtaTsAl77w_n5NGmHlmwVjBgTyTl3RKXMzSOLM-T-ZhHPNwYnEcR_E5AJwu6vSbibd4Vg20_lCCRXdInbbwKNPkgdAQ4T0BUrIfpTQXLBYltE37VoMsgQpzFFZUS1yMDYVGY-IbvIJl0PQrgK_aJgxfCoYrTpl9Uo8iW-j2Yx7Ax-JoUFozX1VCTSjpYZ6TjSmc96UJxyrRUM1GkLCLzvuDQvOKi88PNLo48iFLnvTGGxIdmF5jANwQZa0BLgQgZdV0o6Lq0Ux0dQ7EOkwX_VwIOCQaWOsmtEmD7ONNLDRcE49qHWdOndHK1Eb09HMmxUHoA",
+    "token_expiry": "2021-04-13T19:06:33Z"
+  },
+  "sentinels": {
+    "config_sentinel": "/home/jasonbitheads/.config/gcloud/config_sentinel"
+  }
+}
+2021-04-13 18:06:40,732 INFO     ___FILE_ONLY___ 
+
+2021-04-13 18:06:40,733 DEBUG    root            SDK update checks are disabled.

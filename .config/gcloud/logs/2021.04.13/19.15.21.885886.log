@@ -1,0 +1,577 @@
+2021-04-13 19:15:21,886 DEBUG    root            Loaded Command Group: ['gcloud', 'run']
+2021-04-13 19:15:21,905 DEBUG    root            Loaded Command Group: ['gcloud', 'run', 'revisions']
+2021-04-13 19:15:21,932 DEBUG    root            Loaded Command Group: ['gcloud', 'run', 'revisions', 'list']
+2021-04-13 19:15:21,937 DEBUG    root            Running [gcloud.run.revisions.list] with arguments: [--filter: "metadata.ownerReferences[0].name=hello-world-1", --format: "json", --platform: "managed", --project: "refined-grammar-310502", --quiet: "True", --region: "us-central1"]
+2021-04-13 19:15:21,939 INFO     root            Display format: "table(ready_symbol.color(red="[xX]",green="[✓✔]",yellow="[!…]"):label="",name:label=REVISION,active.yesno(yes="yes", no=""),service_name:label=SERVICE:sort=1,creation_timestamp.date("%Y-%m-%d %H:%M:%S %Z"):label=DEPLOYED:sort=2:reverse,author:label="DEPLOYED BY") json"
+2021-04-13 19:15:21,961 DEBUG    google.auth.transport.requests Making request: GET http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/jasonbitheads@gmail.com/?recursive=true
+2021-04-13 19:15:21,964 DEBUG    urllib3.connectionpool Starting new HTTP connection (1): metadata.google.internal:80
+2021-04-13 19:15:21,966 DEBUG    urllib3.connectionpool http://metadata.google.internal:80 "GET /computeMetadata/v1/instance/service-accounts/jasonbitheads@gmail.com/?recursive=true HTTP/1.1" 200 None
+2021-04-13 19:15:21,967 DEBUG    google.auth.transport.requests Making request: GET http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/jasonbitheads@gmail.com/token
+2021-04-13 19:15:21,969 DEBUG    urllib3.connectionpool Resetting dropped connection: metadata.google.internal
+2021-04-13 19:15:21,972 DEBUG    urllib3.connectionpool http://metadata.google.internal:80 "GET /computeMetadata/v1/instance/service-accounts/jasonbitheads@gmail.com/token HTTP/1.1" 200 None
+2021-04-13 19:15:21,982 DEBUG    google.auth.transport.requests Making request: GET http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/jasonbitheads@gmail.com/?recursive=true
+2021-04-13 19:15:21,984 DEBUG    urllib3.connectionpool Starting new HTTP connection (1): metadata.google.internal:80
+2021-04-13 19:15:21,987 DEBUG    urllib3.connectionpool http://metadata.google.internal:80 "GET /computeMetadata/v1/instance/service-accounts/jasonbitheads@gmail.com/?recursive=true HTTP/1.1" 200 None
+2021-04-13 19:15:21,988 DEBUG    google.auth.transport.requests Making request: GET http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/jasonbitheads@gmail.com/token
+2021-04-13 19:15:21,990 DEBUG    urllib3.connectionpool Resetting dropped connection: metadata.google.internal
+2021-04-13 19:15:21,992 DEBUG    urllib3.connectionpool http://metadata.google.internal:80 "GET /computeMetadata/v1/instance/service-accounts/jasonbitheads@gmail.com/token HTTP/1.1" 200 None
+2021-04-13 19:15:22,015 DEBUG    google.auth.transport.requests Making request: GET http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/jasonbitheads@gmail.com/?recursive=true
+2021-04-13 19:15:22,018 DEBUG    urllib3.connectionpool Starting new HTTP connection (1): metadata.google.internal:80
+2021-04-13 19:15:22,020 DEBUG    urllib3.connectionpool http://metadata.google.internal:80 "GET /computeMetadata/v1/instance/service-accounts/jasonbitheads@gmail.com/?recursive=true HTTP/1.1" 200 None
+2021-04-13 19:15:22,021 DEBUG    google.auth.transport.requests Making request: GET http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/jasonbitheads@gmail.com/token
+2021-04-13 19:15:22,023 DEBUG    urllib3.connectionpool Resetting dropped connection: metadata.google.internal
+2021-04-13 19:15:22,025 DEBUG    urllib3.connectionpool http://metadata.google.internal:80 "GET /computeMetadata/v1/instance/service-accounts/jasonbitheads@gmail.com/token HTTP/1.1" 200 None
+2021-04-13 19:15:22,034 DEBUG    google.auth.transport.requests Making request: GET http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/jasonbitheads@gmail.com/?recursive=true
+2021-04-13 19:15:22,036 DEBUG    urllib3.connectionpool Starting new HTTP connection (1): metadata.google.internal:80
+2021-04-13 19:15:22,038 DEBUG    urllib3.connectionpool http://metadata.google.internal:80 "GET /computeMetadata/v1/instance/service-accounts/jasonbitheads@gmail.com/?recursive=true HTTP/1.1" 200 None
+2021-04-13 19:15:22,039 DEBUG    google.auth.transport.requests Making request: GET http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/jasonbitheads@gmail.com/token
+2021-04-13 19:15:22,041 DEBUG    urllib3.connectionpool Resetting dropped connection: metadata.google.internal
+2021-04-13 19:15:22,043 DEBUG    urllib3.connectionpool http://metadata.google.internal:80 "GET /computeMetadata/v1/instance/service-accounts/jasonbitheads@gmail.com/token HTTP/1.1" 200 None
+2021-04-13 19:15:22,407 INFO     ___FILE_ONLY___ [
+  {
+2021-04-13 19:15:22,407 INFO     ___FILE_ONLY___ 
+    "apiVersion": "serving.knative.dev/v1",
+2021-04-13 19:15:22,407 INFO     ___FILE_ONLY___ 
+    "kind": "Revision",
+2021-04-13 19:15:22,407 INFO     ___FILE_ONLY___ 
+    "metadata": {
+2021-04-13 19:15:22,407 INFO     ___FILE_ONLY___ 
+      "annotations": {
+2021-04-13 19:15:22,407 INFO     ___FILE_ONLY___ 
+        "autoscaling.knative.dev/maxScale": "100",
+2021-04-13 19:15:22,407 INFO     ___FILE_ONLY___ 
+        "client.knative.dev/user-image": "gcr.io/refined-grammar-310502/hello-world-1",
+2021-04-13 19:15:22,407 INFO     ___FILE_ONLY___ 
+        "run.googleapis.com/client-name": "Cloud Code for VS Code",
+2021-04-13 19:15:22,407 INFO     ___FILE_ONLY___ 
+        "run.googleapis.com/client-version": "1.10.0",
+2021-04-13 19:15:22,407 INFO     ___FILE_ONLY___ 
+        "run.googleapis.com/launch-stage": "BETA",
+2021-04-13 19:15:22,407 INFO     ___FILE_ONLY___ 
+        "run.googleapis.com/sandbox": "gvisor",
+2021-04-13 19:15:22,407 INFO     ___FILE_ONLY___ 
+        "serving.knative.dev/creator": "jasonbitheads@gmail.com"
+2021-04-13 19:15:22,407 INFO     ___FILE_ONLY___ 
+      },
+2021-04-13 19:15:22,407 INFO     ___FILE_ONLY___ 
+      "creationTimestamp": "2021-04-13T16:53:38.474044Z",
+2021-04-13 19:15:22,407 INFO     ___FILE_ONLY___ 
+      "generation": 1,
+2021-04-13 19:15:22,408 INFO     ___FILE_ONLY___ 
+      "labels": {
+2021-04-13 19:15:22,408 INFO     ___FILE_ONLY___ 
+        "cloud.googleapis.com/location": "us-central1",
+2021-04-13 19:15:22,408 INFO     ___FILE_ONLY___ 
+        "serving.knative.dev/configuration": "hello-world-1",
+2021-04-13 19:15:22,408 INFO     ___FILE_ONLY___ 
+        "serving.knative.dev/configurationGeneration": "1",
+2021-04-13 19:15:22,408 INFO     ___FILE_ONLY___ 
+        "serving.knative.dev/route": "hello-world-1",
+2021-04-13 19:15:22,408 INFO     ___FILE_ONLY___ 
+        "serving.knative.dev/service": "hello-world-1"
+2021-04-13 19:15:22,408 INFO     ___FILE_ONLY___ 
+      },
+2021-04-13 19:15:22,408 INFO     ___FILE_ONLY___ 
+      "name": "hello-world-1-00001-vip",
+2021-04-13 19:15:22,408 INFO     ___FILE_ONLY___ 
+      "namespace": "577823594134",
+2021-04-13 19:15:22,408 INFO     ___FILE_ONLY___ 
+      "ownerReferences": [
+2021-04-13 19:15:22,408 INFO     ___FILE_ONLY___ 
+        {
+2021-04-13 19:15:22,408 INFO     ___FILE_ONLY___ 
+          "apiVersion": "serving.knative.dev/v1",
+2021-04-13 19:15:22,408 INFO     ___FILE_ONLY___ 
+          "blockOwnerDeletion": true,
+2021-04-13 19:15:22,408 INFO     ___FILE_ONLY___ 
+          "controller": true,
+2021-04-13 19:15:22,408 INFO     ___FILE_ONLY___ 
+          "kind": "Configuration",
+2021-04-13 19:15:22,408 INFO     ___FILE_ONLY___ 
+          "name": "hello-world-1",
+2021-04-13 19:15:22,408 INFO     ___FILE_ONLY___ 
+          "uid": "ef91ae41-4f54-4372-be29-8577fadbd750"
+2021-04-13 19:15:22,408 INFO     ___FILE_ONLY___ 
+        }
+2021-04-13 19:15:22,408 INFO     ___FILE_ONLY___ 
+      ],
+2021-04-13 19:15:22,408 INFO     ___FILE_ONLY___ 
+      "resourceVersion": "AAW/3t0Z/o4",
+2021-04-13 19:15:22,408 INFO     ___FILE_ONLY___ 
+      "selfLink": "/apis/serving.knative.dev/v1/namespaces/577823594134/revisions/hello-world-1-00001-vip",
+2021-04-13 19:15:22,408 INFO     ___FILE_ONLY___ 
+      "uid": "76254235-6ed1-4343-a343-b55b98aa3997"
+2021-04-13 19:15:22,409 INFO     ___FILE_ONLY___ 
+    },
+2021-04-13 19:15:22,409 INFO     ___FILE_ONLY___ 
+    "spec": {
+2021-04-13 19:15:22,409 INFO     ___FILE_ONLY___ 
+      "containerConcurrency": 80,
+2021-04-13 19:15:22,409 INFO     ___FILE_ONLY___ 
+      "containers": [
+2021-04-13 19:15:22,409 INFO     ___FILE_ONLY___ 
+        {
+2021-04-13 19:15:22,409 INFO     ___FILE_ONLY___ 
+          "image": "gcr.io/refined-grammar-310502/hello-world-1",
+2021-04-13 19:15:22,409 INFO     ___FILE_ONLY___ 
+          "ports": [
+2021-04-13 19:15:22,409 INFO     ___FILE_ONLY___ 
+            {
+2021-04-13 19:15:22,409 INFO     ___FILE_ONLY___ 
+              "containerPort": 8080
+2021-04-13 19:15:22,409 INFO     ___FILE_ONLY___ 
+            }
+2021-04-13 19:15:22,409 INFO     ___FILE_ONLY___ 
+          ],
+2021-04-13 19:15:22,409 INFO     ___FILE_ONLY___ 
+          "resources": {
+2021-04-13 19:15:22,409 INFO     ___FILE_ONLY___ 
+            "limits": {
+2021-04-13 19:15:22,409 INFO     ___FILE_ONLY___ 
+              "cpu": "1",
+2021-04-13 19:15:22,409 INFO     ___FILE_ONLY___ 
+              "memory": "256Mi"
+2021-04-13 19:15:22,409 INFO     ___FILE_ONLY___ 
+            }
+2021-04-13 19:15:22,409 INFO     ___FILE_ONLY___ 
+          }
+2021-04-13 19:15:22,409 INFO     ___FILE_ONLY___ 
+        }
+2021-04-13 19:15:22,409 INFO     ___FILE_ONLY___ 
+      ],
+2021-04-13 19:15:22,409 INFO     ___FILE_ONLY___ 
+      "timeoutSeconds": 300
+2021-04-13 19:15:22,409 INFO     ___FILE_ONLY___ 
+    },
+2021-04-13 19:15:22,409 INFO     ___FILE_ONLY___ 
+    "status": {
+2021-04-13 19:15:22,410 INFO     ___FILE_ONLY___ 
+      "conditions": [
+2021-04-13 19:15:22,410 INFO     ___FILE_ONLY___ 
+        {
+2021-04-13 19:15:22,410 INFO     ___FILE_ONLY___ 
+          "lastTransitionTime": "2021-04-13T18:33:16.666510Z",
+2021-04-13 19:15:22,410 INFO     ___FILE_ONLY___ 
+          "status": "True",
+2021-04-13 19:15:22,410 INFO     ___FILE_ONLY___ 
+          "type": "Ready"
+2021-04-13 19:15:22,410 INFO     ___FILE_ONLY___ 
+        },
+2021-04-13 19:15:22,410 INFO     ___FILE_ONLY___ 
+        {
+2021-04-13 19:15:22,410 INFO     ___FILE_ONLY___ 
+          "lastTransitionTime": "2021-04-13T18:33:16.666510Z",
+2021-04-13 19:15:22,410 INFO     ___FILE_ONLY___ 
+          "message": "Revision retired.",
+2021-04-13 19:15:22,410 INFO     ___FILE_ONLY___ 
+          "reason": "Retired",
+2021-04-13 19:15:22,410 INFO     ___FILE_ONLY___ 
+          "severity": "Info",
+2021-04-13 19:15:22,410 INFO     ___FILE_ONLY___ 
+          "status": "False",
+2021-04-13 19:15:22,410 INFO     ___FILE_ONLY___ 
+          "type": "Active"
+2021-04-13 19:15:22,410 INFO     ___FILE_ONLY___ 
+        },
+2021-04-13 19:15:22,410 INFO     ___FILE_ONLY___ 
+        {
+2021-04-13 19:15:22,410 INFO     ___FILE_ONLY___ 
+          "lastTransitionTime": "2021-04-13T16:55:28.737659Z",
+2021-04-13 19:15:22,410 INFO     ___FILE_ONLY___ 
+          "status": "True",
+2021-04-13 19:15:22,410 INFO     ___FILE_ONLY___ 
+          "type": "ContainerHealthy"
+2021-04-13 19:15:22,410 INFO     ___FILE_ONLY___ 
+        },
+2021-04-13 19:15:22,410 INFO     ___FILE_ONLY___ 
+        {
+2021-04-13 19:15:22,410 INFO     ___FILE_ONLY___ 
+          "lastTransitionTime": "2021-04-13T16:55:27.227488Z",
+2021-04-13 19:15:22,410 INFO     ___FILE_ONLY___ 
+          "status": "True",
+2021-04-13 19:15:22,410 INFO     ___FILE_ONLY___ 
+          "type": "ResourcesAvailable"
+2021-04-13 19:15:22,411 INFO     ___FILE_ONLY___ 
+        }
+2021-04-13 19:15:22,411 INFO     ___FILE_ONLY___ 
+      ],
+2021-04-13 19:15:22,411 INFO     ___FILE_ONLY___ 
+      "imageDigest": "gcr.io/refined-grammar-310502/hello-world-1@sha256:2fa9585ee8bc9706ed79c2d8b9c1814f2db828af9b7ea47aa7e954e3b7f2fad2",
+2021-04-13 19:15:22,411 INFO     ___FILE_ONLY___ 
+      "logUrl": "https://console.cloud.google.com/logs/viewer?project=refined-grammar-310502&resource=cloud_run_revision/service_name/hello-world-1/revision_name/hello-world-1-00001-vip&advancedFilter=resource.type%3D%22cloud_run_revision%22%0Aresource.labels.service_name%3D%22hello-world-1%22%0Aresource.labels.revision_name%3D%22hello-world-1-00001-vip%22",
+2021-04-13 19:15:22,411 INFO     ___FILE_ONLY___ 
+      "observedGeneration": 1
+2021-04-13 19:15:22,411 INFO     ___FILE_ONLY___ 
+    }
+2021-04-13 19:15:22,411 INFO     ___FILE_ONLY___ 
+  }
+2021-04-13 19:15:22,415 INFO     ___FILE_ONLY___ ,
+  {
+2021-04-13 19:15:22,415 INFO     ___FILE_ONLY___ 
+    "apiVersion": "serving.knative.dev/v1",
+2021-04-13 19:15:22,416 INFO     ___FILE_ONLY___ 
+    "kind": "Revision",
+2021-04-13 19:15:22,416 INFO     ___FILE_ONLY___ 
+    "metadata": {
+2021-04-13 19:15:22,416 INFO     ___FILE_ONLY___ 
+      "annotations": {
+2021-04-13 19:15:22,416 INFO     ___FILE_ONLY___ 
+        "autoscaling.knative.dev/maxScale": "100",
+2021-04-13 19:15:22,416 INFO     ___FILE_ONLY___ 
+        "client.knative.dev/user-image": "gcr.io/refined-grammar-310502/hello-world-1",
+2021-04-13 19:15:22,416 INFO     ___FILE_ONLY___ 
+        "run.googleapis.com/client-name": "Cloud Code for VS Code",
+2021-04-13 19:15:22,416 INFO     ___FILE_ONLY___ 
+        "run.googleapis.com/client-version": "1.10.0",
+2021-04-13 19:15:22,416 INFO     ___FILE_ONLY___ 
+        "run.googleapis.com/launch-stage": "BETA",
+2021-04-13 19:15:22,416 INFO     ___FILE_ONLY___ 
+        "run.googleapis.com/sandbox": "gvisor",
+2021-04-13 19:15:22,416 INFO     ___FILE_ONLY___ 
+        "serving.knative.dev/creator": "jasonbitheads@gmail.com"
+2021-04-13 19:15:22,416 INFO     ___FILE_ONLY___ 
+      },
+2021-04-13 19:15:22,416 INFO     ___FILE_ONLY___ 
+      "creationTimestamp": "2021-04-13T17:02:59.819629Z",
+2021-04-13 19:15:22,416 INFO     ___FILE_ONLY___ 
+      "generation": 1,
+2021-04-13 19:15:22,416 INFO     ___FILE_ONLY___ 
+      "labels": {
+2021-04-13 19:15:22,416 INFO     ___FILE_ONLY___ 
+        "cloud.googleapis.com/location": "us-central1",
+2021-04-13 19:15:22,416 INFO     ___FILE_ONLY___ 
+        "serving.knative.dev/configuration": "hello-world-1",
+2021-04-13 19:15:22,416 INFO     ___FILE_ONLY___ 
+        "serving.knative.dev/configurationGeneration": "2",
+2021-04-13 19:15:22,416 INFO     ___FILE_ONLY___ 
+        "serving.knative.dev/route": "hello-world-1",
+2021-04-13 19:15:22,416 INFO     ___FILE_ONLY___ 
+        "serving.knative.dev/service": "hello-world-1"
+2021-04-13 19:15:22,416 INFO     ___FILE_ONLY___ 
+      },
+2021-04-13 19:15:22,416 INFO     ___FILE_ONLY___ 
+      "name": "hello-world-1-00002-rop",
+2021-04-13 19:15:22,416 INFO     ___FILE_ONLY___ 
+      "namespace": "577823594134",
+2021-04-13 19:15:22,417 INFO     ___FILE_ONLY___ 
+      "ownerReferences": [
+2021-04-13 19:15:22,417 INFO     ___FILE_ONLY___ 
+        {
+2021-04-13 19:15:22,417 INFO     ___FILE_ONLY___ 
+          "apiVersion": "serving.knative.dev/v1",
+2021-04-13 19:15:22,417 INFO     ___FILE_ONLY___ 
+          "blockOwnerDeletion": true,
+2021-04-13 19:15:22,417 INFO     ___FILE_ONLY___ 
+          "controller": true,
+2021-04-13 19:15:22,417 INFO     ___FILE_ONLY___ 
+          "kind": "Configuration",
+2021-04-13 19:15:22,417 INFO     ___FILE_ONLY___ 
+          "name": "hello-world-1",
+2021-04-13 19:15:22,417 INFO     ___FILE_ONLY___ 
+          "uid": "ef91ae41-4f54-4372-be29-8577fadbd750"
+2021-04-13 19:15:22,417 INFO     ___FILE_ONLY___ 
+        }
+2021-04-13 19:15:22,417 INFO     ___FILE_ONLY___ 
+      ],
+2021-04-13 19:15:22,417 INFO     ___FILE_ONLY___ 
+      "resourceVersion": "AAW/3txgFXs",
+2021-04-13 19:15:22,417 INFO     ___FILE_ONLY___ 
+      "selfLink": "/apis/serving.knative.dev/v1/namespaces/577823594134/revisions/hello-world-1-00002-rop",
+2021-04-13 19:15:22,417 INFO     ___FILE_ONLY___ 
+      "uid": "ec732797-dbd5-4d29-be89-af5561265d68"
+2021-04-13 19:15:22,417 INFO     ___FILE_ONLY___ 
+    },
+2021-04-13 19:15:22,417 INFO     ___FILE_ONLY___ 
+    "spec": {
+2021-04-13 19:15:22,417 INFO     ___FILE_ONLY___ 
+      "containerConcurrency": 80,
+2021-04-13 19:15:22,417 INFO     ___FILE_ONLY___ 
+      "containers": [
+2021-04-13 19:15:22,417 INFO     ___FILE_ONLY___ 
+        {
+2021-04-13 19:15:22,417 INFO     ___FILE_ONLY___ 
+          "image": "gcr.io/refined-grammar-310502/hello-world-1",
+2021-04-13 19:15:22,417 INFO     ___FILE_ONLY___ 
+          "ports": [
+2021-04-13 19:15:22,417 INFO     ___FILE_ONLY___ 
+            {
+2021-04-13 19:15:22,417 INFO     ___FILE_ONLY___ 
+              "containerPort": 8080
+2021-04-13 19:15:22,418 INFO     ___FILE_ONLY___ 
+            }
+2021-04-13 19:15:22,418 INFO     ___FILE_ONLY___ 
+          ],
+2021-04-13 19:15:22,418 INFO     ___FILE_ONLY___ 
+          "resources": {
+2021-04-13 19:15:22,418 INFO     ___FILE_ONLY___ 
+            "limits": {
+2021-04-13 19:15:22,418 INFO     ___FILE_ONLY___ 
+              "cpu": "1",
+2021-04-13 19:15:22,418 INFO     ___FILE_ONLY___ 
+              "memory": "256Mi"
+2021-04-13 19:15:22,418 INFO     ___FILE_ONLY___ 
+            }
+2021-04-13 19:15:22,418 INFO     ___FILE_ONLY___ 
+          }
+2021-04-13 19:15:22,418 INFO     ___FILE_ONLY___ 
+        }
+2021-04-13 19:15:22,418 INFO     ___FILE_ONLY___ 
+      ],
+2021-04-13 19:15:22,418 INFO     ___FILE_ONLY___ 
+      "timeoutSeconds": 300
+2021-04-13 19:15:22,418 INFO     ___FILE_ONLY___ 
+    },
+2021-04-13 19:15:22,418 INFO     ___FILE_ONLY___ 
+    "status": {
+2021-04-13 19:15:22,418 INFO     ___FILE_ONLY___ 
+      "conditions": [
+2021-04-13 19:15:22,418 INFO     ___FILE_ONLY___ 
+        {
+2021-04-13 19:15:22,418 INFO     ___FILE_ONLY___ 
+          "lastTransitionTime": "2021-04-13T17:03:04.285822Z",
+2021-04-13 19:15:22,418 INFO     ___FILE_ONLY___ 
+          "status": "True",
+2021-04-13 19:15:22,418 INFO     ___FILE_ONLY___ 
+          "type": "Ready"
+2021-04-13 19:15:22,418 INFO     ___FILE_ONLY___ 
+        },
+2021-04-13 19:15:22,418 INFO     ___FILE_ONLY___ 
+        {
+2021-04-13 19:15:22,418 INFO     ___FILE_ONLY___ 
+          "lastTransitionTime": "2021-04-13T18:08:44.178668Z",
+2021-04-13 19:15:22,418 INFO     ___FILE_ONLY___ 
+          "reason": "Reserve",
+2021-04-13 19:15:22,418 INFO     ___FILE_ONLY___ 
+          "severity": "Info",
+2021-04-13 19:15:22,419 INFO     ___FILE_ONLY___ 
+          "status": "Unknown",
+2021-04-13 19:15:22,419 INFO     ___FILE_ONLY___ 
+          "type": "Active"
+2021-04-13 19:15:22,419 INFO     ___FILE_ONLY___ 
+        },
+2021-04-13 19:15:22,419 INFO     ___FILE_ONLY___ 
+        {
+2021-04-13 19:15:22,419 INFO     ___FILE_ONLY___ 
+          "lastTransitionTime": "2021-04-13T17:03:04.285822Z",
+2021-04-13 19:15:22,419 INFO     ___FILE_ONLY___ 
+          "status": "True",
+2021-04-13 19:15:22,419 INFO     ___FILE_ONLY___ 
+          "type": "ContainerHealthy"
+2021-04-13 19:15:22,419 INFO     ___FILE_ONLY___ 
+        },
+2021-04-13 19:15:22,419 INFO     ___FILE_ONLY___ 
+        {
+2021-04-13 19:15:22,419 INFO     ___FILE_ONLY___ 
+          "lastTransitionTime": "2021-04-13T17:03:02.764859Z",
+2021-04-13 19:15:22,419 INFO     ___FILE_ONLY___ 
+          "status": "True",
+2021-04-13 19:15:22,419 INFO     ___FILE_ONLY___ 
+          "type": "ResourcesAvailable"
+2021-04-13 19:15:22,419 INFO     ___FILE_ONLY___ 
+        },
+2021-04-13 19:15:22,419 INFO     ___FILE_ONLY___ 
+        {
+2021-04-13 19:15:22,419 INFO     ___FILE_ONLY___ 
+          "lastTransitionTime": "2021-04-13T18:33:04.482683Z",
+2021-04-13 19:15:22,419 INFO     ___FILE_ONLY___ 
+          "message": "System will retry after 1:05:39 from lastTransitionTime for self-healing attempt 0.",
+2021-04-13 19:15:22,419 INFO     ___FILE_ONLY___ 
+          "reason": "PostponedRetry",
+2021-04-13 19:15:22,419 INFO     ___FILE_ONLY___ 
+          "severity": "Info",
+2021-04-13 19:15:22,419 INFO     ___FILE_ONLY___ 
+          "status": "True",
+2021-04-13 19:15:22,419 INFO     ___FILE_ONLY___ 
+          "type": "Retry"
+2021-04-13 19:15:22,419 INFO     ___FILE_ONLY___ 
+        }
+2021-04-13 19:15:22,419 INFO     ___FILE_ONLY___ 
+      ],
+2021-04-13 19:15:22,420 INFO     ___FILE_ONLY___ 
+      "imageDigest": "gcr.io/refined-grammar-310502/hello-world-1@sha256:ffa902d4d71024206ef88c20d381bff1752d625b3bb00652f911a7027d5fdbea",
+2021-04-13 19:15:22,420 INFO     ___FILE_ONLY___ 
+      "logUrl": "https://console.cloud.google.com/logs/viewer?project=refined-grammar-310502&resource=cloud_run_revision/service_name/hello-world-1/revision_name/hello-world-1-00002-rop&advancedFilter=resource.type%3D%22cloud_run_revision%22%0Aresource.labels.service_name%3D%22hello-world-1%22%0Aresource.labels.revision_name%3D%22hello-world-1-00002-rop%22",
+2021-04-13 19:15:22,420 INFO     ___FILE_ONLY___ 
+      "observedGeneration": 1
+2021-04-13 19:15:22,420 INFO     ___FILE_ONLY___ 
+    }
+2021-04-13 19:15:22,420 INFO     ___FILE_ONLY___ 
+  }
+2021-04-13 19:15:22,424 INFO     ___FILE_ONLY___ ,
+  {
+2021-04-13 19:15:22,424 INFO     ___FILE_ONLY___ 
+    "apiVersion": "serving.knative.dev/v1",
+2021-04-13 19:15:22,424 INFO     ___FILE_ONLY___ 
+    "kind": "Revision",
+2021-04-13 19:15:22,424 INFO     ___FILE_ONLY___ 
+    "metadata": {
+2021-04-13 19:15:22,424 INFO     ___FILE_ONLY___ 
+      "annotations": {
+2021-04-13 19:15:22,424 INFO     ___FILE_ONLY___ 
+        "autoscaling.knative.dev/maxScale": "100",
+2021-04-13 19:15:22,424 INFO     ___FILE_ONLY___ 
+        "client.knative.dev/user-image": "gcr.io/refined-grammar-310502/hello-world-1",
+2021-04-13 19:15:22,424 INFO     ___FILE_ONLY___ 
+        "run.googleapis.com/client-name": "Cloud Code for VS Code",
+2021-04-13 19:15:22,424 INFO     ___FILE_ONLY___ 
+        "run.googleapis.com/client-version": "1.10.0",
+2021-04-13 19:15:22,424 INFO     ___FILE_ONLY___ 
+        "run.googleapis.com/launch-stage": "BETA",
+2021-04-13 19:15:22,425 INFO     ___FILE_ONLY___ 
+        "run.googleapis.com/sandbox": "gvisor",
+2021-04-13 19:15:22,425 INFO     ___FILE_ONLY___ 
+        "serving.knative.dev/creator": "jasonbitheads@gmail.com"
+2021-04-13 19:15:22,425 INFO     ___FILE_ONLY___ 
+      },
+2021-04-13 19:15:22,425 INFO     ___FILE_ONLY___ 
+      "creationTimestamp": "2021-04-13T18:08:29.491352Z",
+2021-04-13 19:15:22,425 INFO     ___FILE_ONLY___ 
+      "generation": 1,
+2021-04-13 19:15:22,425 INFO     ___FILE_ONLY___ 
+      "labels": {
+2021-04-13 19:15:22,425 INFO     ___FILE_ONLY___ 
+        "cloud.googleapis.com/location": "us-central1",
+2021-04-13 19:15:22,425 INFO     ___FILE_ONLY___ 
+        "serving.knative.dev/configuration": "hello-world-1",
+2021-04-13 19:15:22,425 INFO     ___FILE_ONLY___ 
+        "serving.knative.dev/configurationGeneration": "3",
+2021-04-13 19:15:22,425 INFO     ___FILE_ONLY___ 
+        "serving.knative.dev/route": "hello-world-1",
+2021-04-13 19:15:22,425 INFO     ___FILE_ONLY___ 
+        "serving.knative.dev/service": "hello-world-1"
+2021-04-13 19:15:22,425 INFO     ___FILE_ONLY___ 
+      },
+2021-04-13 19:15:22,425 INFO     ___FILE_ONLY___ 
+      "name": "hello-world-1-00003-jev",
+2021-04-13 19:15:22,425 INFO     ___FILE_ONLY___ 
+      "namespace": "577823594134",
+2021-04-13 19:15:22,425 INFO     ___FILE_ONLY___ 
+      "ownerReferences": [
+2021-04-13 19:15:22,425 INFO     ___FILE_ONLY___ 
+        {
+2021-04-13 19:15:22,425 INFO     ___FILE_ONLY___ 
+          "apiVersion": "serving.knative.dev/v1",
+2021-04-13 19:15:22,425 INFO     ___FILE_ONLY___ 
+          "blockOwnerDeletion": true,
+2021-04-13 19:15:22,425 INFO     ___FILE_ONLY___ 
+          "controller": true,
+2021-04-13 19:15:22,425 INFO     ___FILE_ONLY___ 
+          "kind": "Configuration",
+2021-04-13 19:15:22,425 INFO     ___FILE_ONLY___ 
+          "name": "hello-world-1",
+2021-04-13 19:15:22,425 INFO     ___FILE_ONLY___ 
+          "uid": "ef91ae41-4f54-4372-be29-8577fadbd750"
+2021-04-13 19:15:22,425 INFO     ___FILE_ONLY___ 
+        }
+2021-04-13 19:15:22,426 INFO     ___FILE_ONLY___ 
+      ],
+2021-04-13 19:15:22,426 INFO     ___FILE_ONLY___ 
+      "resourceVersion": "AAW/3qizvSQ",
+2021-04-13 19:15:22,426 INFO     ___FILE_ONLY___ 
+      "selfLink": "/apis/serving.knative.dev/v1/namespaces/577823594134/revisions/hello-world-1-00003-jev",
+2021-04-13 19:15:22,426 INFO     ___FILE_ONLY___ 
+      "uid": "cc3b9603-3760-442e-9857-e8596cc4851b"
+2021-04-13 19:15:22,426 INFO     ___FILE_ONLY___ 
+    },
+2021-04-13 19:15:22,426 INFO     ___FILE_ONLY___ 
+    "spec": {
+2021-04-13 19:15:22,426 INFO     ___FILE_ONLY___ 
+      "containerConcurrency": 80,
+2021-04-13 19:15:22,426 INFO     ___FILE_ONLY___ 
+      "containers": [
+2021-04-13 19:15:22,426 INFO     ___FILE_ONLY___ 
+        {
+2021-04-13 19:15:22,426 INFO     ___FILE_ONLY___ 
+          "image": "gcr.io/refined-grammar-310502/hello-world-1",
+2021-04-13 19:15:22,426 INFO     ___FILE_ONLY___ 
+          "ports": [
+2021-04-13 19:15:22,426 INFO     ___FILE_ONLY___ 
+            {
+2021-04-13 19:15:22,426 INFO     ___FILE_ONLY___ 
+              "containerPort": 8080
+2021-04-13 19:15:22,426 INFO     ___FILE_ONLY___ 
+            }
+2021-04-13 19:15:22,426 INFO     ___FILE_ONLY___ 
+          ],
+2021-04-13 19:15:22,426 INFO     ___FILE_ONLY___ 
+          "resources": {
+2021-04-13 19:15:22,426 INFO     ___FILE_ONLY___ 
+            "limits": {
+2021-04-13 19:15:22,426 INFO     ___FILE_ONLY___ 
+              "cpu": "1",
+2021-04-13 19:15:22,426 INFO     ___FILE_ONLY___ 
+              "memory": "256Mi"
+2021-04-13 19:15:22,427 INFO     ___FILE_ONLY___ 
+            }
+2021-04-13 19:15:22,427 INFO     ___FILE_ONLY___ 
+          }
+2021-04-13 19:15:22,427 INFO     ___FILE_ONLY___ 
+        }
+2021-04-13 19:15:22,427 INFO     ___FILE_ONLY___ 
+      ],
+2021-04-13 19:15:22,427 INFO     ___FILE_ONLY___ 
+      "timeoutSeconds": 300
+2021-04-13 19:15:22,427 INFO     ___FILE_ONLY___ 
+    },
+2021-04-13 19:15:22,427 INFO     ___FILE_ONLY___ 
+    "status": {
+2021-04-13 19:15:22,427 INFO     ___FILE_ONLY___ 
+      "conditions": [
+2021-04-13 19:15:22,427 INFO     ___FILE_ONLY___ 
+        {
+2021-04-13 19:15:22,427 INFO     ___FILE_ONLY___ 
+          "lastTransitionTime": "2021-04-13T18:08:37.028369Z",
+2021-04-13 19:15:22,427 INFO     ___FILE_ONLY___ 
+          "status": "True",
+2021-04-13 19:15:22,427 INFO     ___FILE_ONLY___ 
+          "type": "Ready"
+2021-04-13 19:15:22,427 INFO     ___FILE_ONLY___ 
+        },
+2021-04-13 19:15:22,427 INFO     ___FILE_ONLY___ 
+        {
+2021-04-13 19:15:22,427 INFO     ___FILE_ONLY___ 
+          "lastTransitionTime": "2021-04-13T18:08:44.054535Z",
+2021-04-13 19:15:22,427 INFO     ___FILE_ONLY___ 
+          "severity": "Info",
+2021-04-13 19:15:22,427 INFO     ___FILE_ONLY___ 
+          "status": "True",
+2021-04-13 19:15:22,427 INFO     ___FILE_ONLY___ 
+          "type": "Active"
+2021-04-13 19:15:22,427 INFO     ___FILE_ONLY___ 
+        },
+2021-04-13 19:15:22,427 INFO     ___FILE_ONLY___ 
+        {
+2021-04-13 19:15:22,427 INFO     ___FILE_ONLY___ 
+          "lastTransitionTime": "2021-04-13T18:08:37.028369Z",
+2021-04-13 19:15:22,427 INFO     ___FILE_ONLY___ 
+          "status": "True",
+2021-04-13 19:15:22,428 INFO     ___FILE_ONLY___ 
+          "type": "ContainerHealthy"
+2021-04-13 19:15:22,428 INFO     ___FILE_ONLY___ 
+        },
+2021-04-13 19:15:22,428 INFO     ___FILE_ONLY___ 
+        {
+2021-04-13 19:15:22,428 INFO     ___FILE_ONLY___ 
+          "lastTransitionTime": "2021-04-13T18:08:35.368540Z",
+2021-04-13 19:15:22,428 INFO     ___FILE_ONLY___ 
+          "status": "True",
+2021-04-13 19:15:22,428 INFO     ___FILE_ONLY___ 
+          "type": "ResourcesAvailable"
+2021-04-13 19:15:22,428 INFO     ___FILE_ONLY___ 
+        }
+2021-04-13 19:15:22,428 INFO     ___FILE_ONLY___ 
+      ],
+2021-04-13 19:15:22,428 INFO     ___FILE_ONLY___ 
+      "imageDigest": "gcr.io/refined-grammar-310502/hello-world-1@sha256:3deb1c59c150683ac427acef57aa8d563cf40982a78bc4fd24b27a79c0b9b728",
+2021-04-13 19:15:22,428 INFO     ___FILE_ONLY___ 
+      "logUrl": "https://console.cloud.google.com/logs/viewer?project=refined-grammar-310502&resource=cloud_run_revision/service_name/hello-world-1/revision_name/hello-world-1-00003-jev&advancedFilter=resource.type%3D%22cloud_run_revision%22%0Aresource.labels.service_name%3D%22hello-world-1%22%0Aresource.labels.revision_name%3D%22hello-world-1-00003-jev%22",
+2021-04-13 19:15:22,428 INFO     ___FILE_ONLY___ 
+      "observedGeneration": 1
+2021-04-13 19:15:22,428 INFO     ___FILE_ONLY___ 
+    }
+2021-04-13 19:15:22,428 INFO     ___FILE_ONLY___ 
+  }
+2021-04-13 19:15:22,428 INFO     ___FILE_ONLY___ 
+]
+
+2021-04-13 19:15:22,429 DEBUG    root            SDK update checks are disabled.

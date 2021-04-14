@@ -1,0 +1,17 @@
+2021-04-13 18:08:21,650 DEBUG    root            Loaded Command Group: ['gcloud', 'auth']
+2021-04-13 18:08:21,653 DEBUG    root            Loaded Command Group: ['gcloud', 'auth', 'docker_helper']
+2021-04-13 18:08:21,656 DEBUG    root            Running [gcloud.auth.docker-helper] with arguments: [METHOD: "get"]
+2021-04-13 18:08:21,673 DEBUG    google.auth.transport.requests Making request: GET http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/jasonbitheads@gmail.com/?recursive=true
+2021-04-13 18:08:21,676 DEBUG    urllib3.connectionpool Starting new HTTP connection (1): metadata.google.internal:80
+2021-04-13 18:08:21,680 DEBUG    urllib3.connectionpool http://metadata.google.internal:80 "GET /computeMetadata/v1/instance/service-accounts/jasonbitheads@gmail.com/?recursive=true HTTP/1.1" 200 None
+2021-04-13 18:08:21,680 DEBUG    google.auth.transport.requests Making request: GET http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/jasonbitheads@gmail.com/token
+2021-04-13 18:08:21,682 DEBUG    urllib3.connectionpool Resetting dropped connection: metadata.google.internal
+2021-04-13 18:08:21,685 DEBUG    urllib3.connectionpool http://metadata.google.internal:80 "GET /computeMetadata/v1/instance/service-accounts/jasonbitheads@gmail.com/token HTTP/1.1" 200 None
+2021-04-13 18:08:21,689 INFO     root            Display format: "json"
+2021-04-13 18:08:21,753 INFO     ___FILE_ONLY___ {
+  "Secret": "ya29.a0AfH6SMD2Z0ns2wWJ0chijoMmJ9e_ng2QIGBAJqLpMpmmn63ljPSlagXrKk09TdGy6TWKUOKCoc3VXMZKie7GYrlqcAVF2cDSjWTxdKKkFfhBcA-zCHQhtx1tKmoHRPL1a824EObc2JQ20d5dLR_XkHaOgAAoDnEeZegy7UDTChaomWbfY25RRGomV8O7yamZ-2SDMoKard7wr33v4Kx34yiUww3_D60DkoKXNDC9TfgSo9IqOK8C8qh-ngkS-PWALPqm4TE",
+  "Username": "_dcgcloud_token"
+}
+2021-04-13 18:08:21,753 INFO     ___FILE_ONLY___ 
+
+2021-04-13 18:08:21,753 DEBUG    root            SDK update checks are disabled.
