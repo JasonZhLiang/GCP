@@ -113,3 +113,55 @@ kubectl describe service/frontend-external
 kubectl get service/frontend-external
 git status
 git init
+git add .
+git branch -M main
+git checkout -b main
+git commit -m "init content"
+git status
+git remote
+git remote add origin git@github.com:JasonZhLiang/GCP.git
+git remote
+git push -u origin main
+ls -la
+cd .ssh
+ls -la
+cat id_rsa.pub
+cat google_compute_engine.pub 
+cd
+git push -u origin main
+ssh-keygen -t gcpgit -C "jasonbitheads@gmail.com"
+ssh-keygen -t rsa -C "jasonbitheads@gmail.com"
+pbcopy < ~/.ssh/gcpgit.pub
+cat ./.ssh/gcpgit.pub
+cat ~/.ssh/gcpgit.pub
+ls -la
+cd .ssh
+ls -la
+cd
+ls -la
+cat gcpgit.pub
+ssh -T git@github.com
+git push -u origin main
+ssh -T git@github.com
+git config --global user.name "jasonbitheads"
+git config --global user.email "jasonbitheads@gmail.com"
+ssh -T git@github.com
+git remote remove origin
+git remote add origin https://github.com/JasonZhLiang/GCP.git
+git push -u origin main
+git submodule add https://github.com/GoogleCloudPlatform/microservices-demo.git microservices-demo
+git rm --cached microservices-demo
+git submodule add https://github.com/GoogleCloudPlatform/microservices-demo.git microservices-demo
+git rm --cached golang-samples
+git submodule add https://github.com/GoogleCloudPlatform/golang-samples golang-samples
+git rm --cached hellp-word-1
+git rm --cached helop-world-1
+git rm --cached hello-world-1
+git submodule add https://github.com/JasonZhLiang/CAlearning hello-world-1
+git status
+git commite -m "gitsubmodule"
+git commit -m "gitsubmodule"
+git push -u origin main
+git submodule update --init --recursive --progress
+git status
+git add --all
