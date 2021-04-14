@@ -165,3 +165,43 @@ git push -u origin main
 git submodule update --init --recursive --progress
 git status
 git add --all
+git commit -a
+git push -u origin main
+git status
+git clone https://github.com/kubernetes/examples
+ls -la
+cd examples/guestbook
+gcloud container clusters get-credentials cluster-php --zone us-central-1-a
+gcloud container clusters get-credentials cluster-php --zone us-central1-a
+cat redis-master-deployment.yaml
+cd examples/guestbook
+gcloud container clusters get-credentials cluster-php --zone us-central1-a
+cat redis-master-deployment.yaml
+kubectl create -f redis-master-deployment.yaml
+kubectl get pods
+cat redis-master-service.yaml
+kubectl create -f redis-master-service.yaml
+kubectl get pods
+kubectl get service
+cat redis-slave-deployment.yaml
+kubectl create -f redis-slave-deployment.yaml
+kubectl get pods
+cat redis-slave-service.yaml
+kubectl create -f redis-slave-service.yaml
+kubectl get service
+kubectl create -f frontend-deployment.yaml
+sed -i -e 's/NodePort/LoadBalancer/g' frontend-service.yaml
+kubectl create -f frontend-service.yaml
+kubectl get services --watch
+kubectl get service/frontend
+kubectl get service
+cd
+git submodule add https://github.com/kubernetes/examples
+git status
+git submodule update --init --recursive --progress
+git status
+git commit -m "new php tutorial"
+git remote
+git push origin main -u
+git status
+git add
