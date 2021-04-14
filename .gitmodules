@@ -1,0 +1,9 @@
+[submodule "microservices-demo"]
+	path = microservices-demo
+	url = https://github.com/GoogleCloudPlatform/microservices-demo.git
+[submodule "golang-samples"]
+	path = golang-samples
+	url = https://github.com/GoogleCloudPlatform/golang-samples
+[submodule "hello-world-1"]
+	path = hello-world-1
+	url = https://github.com/JasonZhLiang/CAlearning
